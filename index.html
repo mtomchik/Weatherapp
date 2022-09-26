@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="assets\style.css" />
+    <title>Weatherapp</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">Whether We'll Have Weather</h1>
+    </header>
+    <main class="flex-row justify-space-between">
+        <div class="col-12 col-md-4">
+    
+          <div class="card">
+            <h3 class="card-header text-uppercase">Search by City</h3>
+            <form id="user-form" class="card-body">
+              <label class="form-label" for="city">City</label>
+              <input name="city" id="city" type="text" autofocus="true" class="form-input" />
+              <button type="submit" class="btn">Get User</button>
+            </form>
+          </div>
+    
+        <div class="col-12 col-md-8">
+          <h2 class="subtitle">Previous cities <span id="repo-search-term"></span></h2>
+          <div id="repos-container" class="list-group"></div>
+        </div>
+        <div id = "content"></div>
+      </main>
+   <script src="assets\script.js"></script>
+</body>
+</html>
